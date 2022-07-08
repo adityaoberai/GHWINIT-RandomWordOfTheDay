@@ -1,4 +1,4 @@
-# Random Word Of TheDay
+# Random Word Of The Day - Appwrite Cloud Function
 
 ## 🤖 Documentation
 
@@ -67,6 +67,8 @@ Go to Settings tab of your Cloud Function and add the following environment vari
 ## 🚀 Deployment
 
 There are two ways of deploying the Appwrite function, both having the same results, but each using a different process. We highly recommend using CLI deployment to achieve the best experience.
+
+Make sure to set a CRON schedule in the Settings tab of the function on the Appwrite Console if you want the function to be triggered by a schedule.
 
 ### Using CLI
 
