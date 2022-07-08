@@ -38,7 +38,7 @@ public async Task<RuntimeResponse> Main(RuntimeRequest req, RuntimeResponse res)
     TwilioClient.Init(req.Env["TwilioAccountSID"], req.Env["TwilioAuthToken"]);
 
     var message = MessageResource.Create(
-        to: new Twilio.Types.PhoneNumber("+918439056262"),
+        to: new Twilio.Types.PhoneNumber(req.Env["ToPhoneNumber"]),
         from: new Twilio.Types.PhoneNumber(req.Env["TwilioPhoneNumber"]),
         body: "Random Word Of The Day: \n" + randomWordList[0] + " means " + meaning
     );
