@@ -1,10 +1,8 @@
 # Random Word Of TheDay
 
-Welcome to the documentation of this function 👋 We strongly recommend keeping this file in sync with your function's logic to make sure anyone can easily understand your function in the future. If you don't need documentation, you can remove this file.
-
 ## 🤖 Documentation
 
-Sends an SMS to a person with a random word and its meaning
+This function sends an SMS to a person with a [random word](https://random-word-api.herokuapp.com/home) and its [meaning](https://dictionaryapi.dev/).
 
 <!-- Update with your description, for example 'Create Stripe payment and return payment URL' -->
 
@@ -17,6 +15,8 @@ This function expects no input
 _Example output:_
 
 <!-- Update with your expected output -->
+
+- **Appwrite Console Logs**
 
 ```json
 {
@@ -48,6 +48,10 @@ _Example output:_
 	}
 }
 ```
+
+- **Message on Phone**
+
+<img src="https://user-images.githubusercontent.com/31401437/178012458-b8ce6f2c-aa6b-4066-b6f4-cef2903fa7ff.jpg" width="400px">
 
 ## 📝 Environment Variables
 
