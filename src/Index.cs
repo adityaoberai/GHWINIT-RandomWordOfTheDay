@@ -33,8 +33,6 @@ public async Task<RuntimeResponse> Main(RuntimeRequest req, RuntimeResponse res)
 
     var meaning = dictionaryList[0].Meanings[0].Definitions[0].Definition;
 
-    //Console.WriteLine(randomWordList[0] + " means " + meaning);
-
     TwilioClient.Init(req.Env["TwilioAccountSID"], req.Env["TwilioAuthToken"]);
 
     var message = MessageResource.Create(
